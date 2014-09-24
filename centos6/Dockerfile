@@ -19,7 +19,7 @@ RUN sed -ri "s/^UsePAM yes/#UsePAM yes/" /etc/ssh/sshd_config
 RUN sed -ri "s/^#UsePAM no/UsePAM no/" /etc/ssh/sshd_config
 RUN echo %user	ALL=NOPASSWD: ALL >> /etc/sudoers
 RUN mkdir /var/run/sshd
-RUN useradd -G wheel user
+RUN useradd -g wheel user
 RUN echo user:hjue | chpasswd
 
 EXPOSE 22
