@@ -1,4 +1,4 @@
-### dockerfiles for centos6
+### dockerfiles for apache
 
 To build, make sure you have Docker installed, clone this repo somewhere, and then run:
 
