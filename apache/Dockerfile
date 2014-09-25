@@ -10,6 +10,7 @@ ADD ./supervisord.conf /etc/supervisord.conf
 
 ADD ./start-apache2.sh /start-apache2.sh
 RUN chmod -v +x /start-apache2.sh
+RUN chown -R apache:apache /var/www/
 
 EXPOSE 80 
 
